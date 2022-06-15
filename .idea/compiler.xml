@@ -6,11 +6,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="mthree - C245 java" />
+        <module name="mthree-C245-java" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="8">
-      <module name="mthree - C245 java" target="8" />
+      <module name="mthree-C245-java" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

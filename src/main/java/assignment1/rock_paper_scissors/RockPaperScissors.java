@@ -1,4 +1,4 @@
-package assignment1;
+package assignment1.rock_paper_scissors;
 
 import java.util.HashMap;
 import java.util.InputMismatchException;
@@ -44,7 +44,9 @@ public class RockPaperScissors {
                     this.numTies = 0;
 
                 } catch (InputMismatchException e) {
-                    System.err.println("Need to enter a number between 1 and 10 inclusive, please try again.");
+                    System.err.println("Need to enter a number between 1 and 10 inclusive. System quit.");
+                    scanner.nextLine();
+                    System.exit(-1);
                 }
             }
         }
@@ -80,6 +82,7 @@ public class RockPaperScissors {
                     }
                 } catch (InputMismatchException e) {
                     System.err.println("Need to enter a choice between 1 and 3. (1 = Rock, 2 = Paper, 3 = Scissors)");
+                    scanner.nextLine();
                 }
             }
         }
