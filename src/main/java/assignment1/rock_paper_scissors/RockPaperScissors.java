@@ -15,11 +15,11 @@ public class RockPaperScissors {
         private int numAiWins = 0;
         private int numTies = 0;
 
-        private final String ROCK = "ROCK";
-        private final String PAPER = "PAPER";
-        private final String SCISSORS = "SCISSORS";
+        private final static String ROCK = "ROCK";
+        private final static String PAPER = "PAPER";
+        private final static String SCISSORS = "SCISSORS";
 
-        private final Map<Integer, String> choiceMap = new HashMap<>();
+        private final static Map<Integer, String> choiceMap = new HashMap<>();
 
         private Game() {
             initializeMap();
