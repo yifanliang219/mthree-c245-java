@@ -17,10 +17,13 @@ public class DogGenetics {
         double[] random_values = new double[numOfCategories];
         double sum = 0;
         for (int i = 0; i < numOfCategories; i++) {
-            double random = Math.random() + 0.1;
+            double random = Math.random();
             sum += random;
             random_values[i] = random;
         }
+
+        if(sum == 0) return random_percentages(numOfCategories);
+
         double scale = 100.0 / sum;
         int[] percentages = new int[numOfCategories];
         int realSum = 0;
